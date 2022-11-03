@@ -1,10 +1,10 @@
-const Container = ({color_name,color_id}) => {
+const Container = (props) => {
   return (
     <div className="card">
-        <div style={{backgroundColor:`${color_name}`}}></div>
+        <div style={{backgroundColor:`${props.color_name}`}}></div>
         <span>
             <h2>{color_name}</h2>
-            <h4 style={{color:`${color_name}`}}>{color_id}</h4>
+            <h4 style={{color:`${props.color_name}`}}>{color_id}</h4>
         </span>
     </div>
   )
